@@ -1,37 +1,204 @@
 body{
-    background-color: lightgray;
+    background-color: black;
+    font-family: export,sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 header{
-    background-color: bisque;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+#main-title{
+    color: White;
+    font-size: 130px;
+    justify-content: center;
+    padding: 50px;;
+}
+.score-bar{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border: 5px solid white;
+    
 }
 #move-counter{
-    background-color: blueviolet;
+    color: chartreuse;
 }
-#title{
-    background-color: blueviolet;
+#game-clock{
+    color: chartreuse;
 }
-#timer{
-    background-color: blueviolet;
+#move-timer{
+    color: chartreuse;
 }
 .button-bar{
-    background-color: aqua;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
 }
 #new-gameBtn{
+    color: white;
+    font-size: 24px;
+    padding: 25px 40px;
+    float: left;
+    border: 5px solid white;
+    background-color: black;
+}
+#multi-playerBtn{
+    color: white;
+    font-size: 24px;
+    padding: 25px 40px;
+    float: left;
+    border: 5px solid white;
     background-color: black;
 }
 #hard-modeBtn{
+    color: white;
+    font-size: 24px;
+    padding: 25px 40px;
+    float: left;
+    border: 5px solid white;
     background-color: black;
 }
-.card-table{
+#card-container{
     display:grid;
-    grid-template-columns: 100px 50px 100px;
-    grid-template-rows: 100px auto 80px;
-}
-.cards{
-    column-gap: 10px;
-    row-gap: 10px;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: 200 px auto;
+    gap: 25px;
+    justify-content: center;
     justify-items: center;
-    align-items: center;
-    background-color: blue;
-    border: solid black 2px;
+    /* visibility: hidden; */
 }
+.card-front1{
+    grid-area: 1/1/1/1;
+    /* visibility: hidden; */
+}
+.card-front2{
+    grid-area: 1/2/1/2;
+    /* visibility: hidden; */
+}
+.card-front3{
+    grid-area: 1/3/1/3;
+    /* visibility: hidden; */
+}
+.card-front4{
+    grid-area: 1/4/1/4;
+    /* visibility: hidden; */
+}
+.card-front5{
+    grid-area: 2/1/2/1;
+    /* visibility: hidden; */
+}
+.card-front6{
+    grid-area: 2/2/2/2;
+    /* visibility: hidden; */
+}
+.card-front7{
+    grid-area: 2/3/2/3;
+    /* visibility: hidden; */
+}
+.card-front8{
+    grid-area: 2/4/2/4;
+    /* visibility: hidden; */
+}
+.card-front9{
+    grid-area: 3/1/3/1;
+    /* visibility: hidden; */
+}
+.card-front10{
+    grid-area: 3/2/3/2;
+    /* visibility: hidden; */
+}
+.card-front11{
+    grid-area: 3/3/3/3;
+    /* visibility: hidden; */
+}
+.card-front12{
+    grid-area: 3/4/3/4;
+    /* visibility: hidden; */
+}
+.card-front13{
+    grid-area: 4/1/4/1;
+    /* visibility: hidden; */
+}
+.card-front14{
+    grid-area: 4/2/4/2;
+    /* visibility: hidden; */
+}
+.card-front15{
+    grid-area: 4/3/4/3;
+    /* visibility: hidden; */
+}
+.card-front16{
+    grid-area: 4/4/4/4;
+    /* visibility: hidden; */
+}
+
+.card-back1{
+    grid-area: 1/1/1/1;
+    box-shadow: 0px 0px 15px 3px white;
+}
+.card-back2{
+    grid-area: 1/2/1/2;
+    box-shadow: 0px 0px 15px 3px white;
+}
+.card-back3{
+    grid-area: 1/3/1/3;
+    box-shadow: 0px 0px 15px 3px white;
+}
+.card-back4{
+    grid-area: 1/4/1/4;
+    box-shadow: 0px 0px 15px 3px white;
+}
+.card-back5{
+    grid-area: 2/1/2/1;
+    box-shadow: 0px 0px 15px 3px white;
+}
+.card-back6{
+    grid-area: 2/2/2/2;
+    box-shadow: 0px 0px 15px 3px white;
+}
+.card-back7{
+    grid-area: 2/3/2/3;
+    box-shadow: 0px 0px 15px 3px white;
+}
+.card-back8{
+    grid-area: 2/4/2/4;
+    box-shadow: 0px 0px 15px 3px white;
+}
+.card-back9{
+    grid-area: 3/1/3/1;
+    box-shadow: 0px 0px 15px 3px white;
+}
+.card-back10{
+    grid-area: 3/2/3/2;
+    box-shadow: 0px 0px 15px 3px white;
+}
+.card-back11{
+    grid-area: 3/3/3/3;
+    box-shadow: 0px 0px 15px 3px white;
+}
+.card-back12{
+    grid-area: 3/4/3/4;
+    box-shadow: 0px 0px 15px 3px white;
+}
+.card-back13{
+    grid-area: 4/1/4/1;
+    box-shadow: 0px 0px 15px 3px white;
+}
+.card-back14{
+    grid-area: 4/2/4/2;
+    box-shadow: 0px 0px 15px 3px white;
+}
+.card-back15{
+    grid-area: 4/3/4/3;
+    box-shadow: 0px 0px 15px 3px white;
+}
+.card-back16{
+    grid-area: 4/4/4/4;
+    box-shadow: 0px 0px 15px 3px white;
+}
+
