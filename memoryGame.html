@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/tab6gek.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=m, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=m, initial-scale=1.0"> -->
     <link rel="stylesheet" href="memoryGame.css">
     <script src="memoryGame.js" defer></script>
     <title>Memory Game</title>
@@ -20,44 +20,58 @@
         <div id="move-counter">Move Counter:</div>
     </div>
     <div class="button-bar">
-        <div id="new-gameBtn">New Single Player Game</div>
-        <div id="multi-playerBtn">Play a friend</div>
+        <div id="new-gameBtn">Start Game</div>
         <div id="hard-modeBtn">Too Easy? Try Hard Mode</div>
     </div>
     <div id="card-container">
-            <img src="donut.jpg" class="card-front1">
-            <img src="donut.jpg" class="card-front2">    
-            <img src="flower.jpg" class="card-front3">
-            <img src="flower.jpg" class="card-front4">
-            <img src="moon.jpg" class="card-front5">
-            <img src="moon.jpg" class="card-front6">
-            <img src="mushroom.jpg" class="card-front7">
-            <img src="mushroom.jpg" class="card-front8">
-            <img src="palmtree.jpg" class="card-front9">
-            <img src="palmtree.jpg" class="card-front10">
-            <img src="peach.jpg" class="card-front11">
-            <img src="peach.jpg" class="card-front12">
-            <img src="cactus.jpg" class="card-front13">
-            <img src="cactus.jpg" class="card-front14">
-            <img src="ChilliPepper.jpg" class="card-front15">
-            <img src="ChilliPepper.jpg" class="card-front16">
-            <img src="back.jpg" class="card-back1">
-            <img src="back.jpg" class="card-back2">
-            <img src="back.jpg" class="card-back3">
-            <img src="back.jpg" class="card-back4">
-            <img src="back.jpg" class="card-back5">
-            <img src="back.jpg" class="card-back6">
-            <img src="back.jpg" class="card-back7">
-            <img src="back.jpg" class="card-back8">
-            <img src="back.jpg" class="card-back9">
-            <img src="back.jpg" class="card-back10">
-            <img src="back.jpg" class="card-back11">
-            <img src="back.jpg" class="card-back12">
-            <img src="back.jpg" class="card-back13">
-            <img src="back.jpg" class="card-back14">
-            <img src="back.jpg" class="card-back15">
-            <img src="back.jpg" class="card-back16">
-        </div> 
+            <img src="donut.jpg" id="card-front1" class="front">
+            <img src="donut.jpg" id="card-front2" class="front">    
+            <img src="flower.jpg" id="card-front3" class="front">
+            <img src="flower.jpg" id="card-front4" class="front">
+            <img src="moon.jpg" id="card-front5" class="front">
+            <img src="moon.jpg" id="card-front6" class="front">
+            <img src="mushroom.jpg" id="card-front7" class="front">
+            <img src="mushroom.jpg" id="card-front8" class="front">
+            <img src="palmtree.jpg" id="card-front9" class="front">
+            <img src="palmtree.jpg" id="card-front10" class="front">
+            <img src="peach.jpg" id="card-front11" class="front">
+            <img src="peach.jpg" id="card-front12" class="front">
+            <img src="cactus.jpg" id="card-front13" class="front">
+            <img src="cactus.jpg" id="card-front14" class="front">
+            <img src="ChilliPepper.jpg" id="card-front15" class="front">
+            <img src="ChilliPepper.jpg" id="card-front16" class="front">  
+            <img src="hardcard1.jpg" id="hardcard1" class="hard-cards">
+            <img src="hardcard1.jpg" id="hardcard2" class="hard-cards">
+            <img src="hardcard2.jpg" id="hardcard3" class="hard-cards">
+            <img src="hardcard2.jpg" id="hardcard4" class="hard-cards">
+            <img src="hardcard3.jpg" id="hardcard5" class="hard-cards">
+            <img src="hardcard3.jpg" id="hardcard6" class="hard-cards">
+            <img src="hardcard4.jpg" id="hardcard7" class="hard-cards">
+            <img src="hardcard4.jpg" id="hardcard8" class="hard-cards">
+            <img src="hardcard5.jpg" id="hardcard9" class="hard-cards">
+            <img src="hardcard5.jpg" id="hardcard10" class="hard-cards">
+            <img src="hardcard6.jpg" id="hardcard11" class="hard-cards">
+            <img src="hardcard6.jpg" id="hardcard12" class="hard-cards">
+            <img src="hardcard7.jpg" id="hardcard13" class="hard-cards">
+            <img src="hardcard7.jpg" id="hardcard14" class="hard-cards">
+            <img src="hardcard8.jpg" id="hardcard15" class="hard-cards">
+            <img src="hardcard8.jpg" id="hardcard16" class="hard-cards">
+            <img src="back.jpg" id="card-back1" class="back">
+            <img src="back.jpg" id="card-back2" class="back">
+            <img src="back.jpg" id="card-back3" class="back">
+            <img src="back.jpg" id="card-back4" class="back">
+            <img src="back.jpg" id="card-back5" class="back">
+            <img src="back.jpg" id="card-back6" class="back">
+            <img src="back.jpg" id="card-back7" class="back">
+            <img src="back.jpg" id="card-back8" class="back">
+            <img src="back.jpg" id="card-back9" class="back">
+            <img src="back.jpg" id="card-back10" class="back">
+            <img src="back.jpg" id="card-back11" class="back">
+            <img src="back.jpg" id="card-back12" class="back">
+            <img src="back.jpg" id="card-back13" class="back">
+            <img src="back.jpg" id="card-back14" class="back">
+            <img src="back.jpg" id="card-back15" class="back">
+            <img src="back.jpg" id="card-back16" class="back">
     </div>   
 </body>
 </html>

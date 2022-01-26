@@ -3,6 +3,7 @@ body{
     font-family: export,sans-serif;
     font-weight: 400;
     font-style: normal;
+    cursor: default;
 }
 header{
     display: flex;
@@ -10,6 +11,10 @@ header{
     justify-content: center;
     padding-bottom: 50px;
 }
+.hidden{
+    visibility: hidden;
+}
+
 #main-title{
     color: White;
     font-size: 130px;
@@ -46,15 +51,9 @@ header{
     float: left;
     border: 5px solid white;
     background-color: black;
+    cursor: pointer;
 }
-#multi-playerBtn{
-    color: white;
-    font-size: 24px;
-    padding: 25px 40px;
-    float: left;
-    border: 5px solid white;
-    background-color: black;
-}
+
 #hard-modeBtn{
     color: white;
     font-size: 24px;
@@ -62,143 +61,208 @@ header{
     float: left;
     border: 5px solid white;
     background-color: black;
+    cursor: pointer;
 }
 #card-container{
     display:grid;
     grid-template-columns: repeat(4, 200px);
     grid-template-rows: 200 px auto;
     gap: 25px;
-    justify-content: center;
+    justify-content: center; 
     justify-items: center;
     /* visibility: hidden; */
 }
-.card-front1{
+.front{
+    visibility: ;
+}
+.back{
+    visibility: ;
+}
+.hard-cards{
+    visibility: ;
+}
+#card-front1{
     grid-area: 1/1/1/1;
     /* visibility: hidden; */
 }
-.card-front2{
+#card-front2{
     grid-area: 1/2/1/2;
     /* visibility: hidden; */
 }
-.card-front3{
+#card-front3{
     grid-area: 1/3/1/3;
     /* visibility: hidden; */
 }
-.card-front4{
+#card-front4{
     grid-area: 1/4/1/4;
     /* visibility: hidden; */
 }
-.card-front5{
+#card-front5{
     grid-area: 2/1/2/1;
     /* visibility: hidden; */
 }
-.card-front6{
+#card-front6{
     grid-area: 2/2/2/2;
     /* visibility: hidden; */
 }
-.card-front7{
+#card-front7{
     grid-area: 2/3/2/3;
     /* visibility: hidden; */
 }
-.card-front8{
+#card-front8{
     grid-area: 2/4/2/4;
     /* visibility: hidden; */
 }
-.card-front9{
+#card-front9{
     grid-area: 3/1/3/1;
     /* visibility: hidden; */
 }
-.card-front10{
+#card-front10{
     grid-area: 3/2/3/2;
     /* visibility: hidden; */
 }
-.card-front11{
+#card-front11{
     grid-area: 3/3/3/3;
     /* visibility: hidden; */
 }
-.card-front12{
+#card-front12{
     grid-area: 3/4/3/4;
     /* visibility: hidden; */
 }
-.card-front13{
+#card-front13{
     grid-area: 4/1/4/1;
     /* visibility: hidden; */
 }
-.card-front14{
+#card-front14{
     grid-area: 4/2/4/2;
     /* visibility: hidden; */
 }
-.card-front15{
+#card-front15{
     grid-area: 4/3/4/3;
     /* visibility: hidden; */
 }
-.card-front16{
+#card-front16{
     grid-area: 4/4/4/4;
     /* visibility: hidden; */
 }
 
-.card-back1{
+#card-back1{
     grid-area: 1/1/1/1;
     box-shadow: 0px 0px 15px 3px white;
+    /* visibility: hidden; */
 }
-.card-back2{
+#card-back2{
     grid-area: 1/2/1/2;
     box-shadow: 0px 0px 15px 3px white;
+    /* visibility: hidden; */
 }
-.card-back3{
+#card-back3{
     grid-area: 1/3/1/3;
     box-shadow: 0px 0px 15px 3px white;
+    /* visibility: hidden; */
 }
-.card-back4{
+#card-back4{
     grid-area: 1/4/1/4;
     box-shadow: 0px 0px 15px 3px white;
+    /* visibility: hidden; */
 }
-.card-back5{
+#card-back5{
     grid-area: 2/1/2/1;
     box-shadow: 0px 0px 15px 3px white;
+    /* visibility: hidden; */
 }
-.card-back6{
+#card-back6{
     grid-area: 2/2/2/2;
     box-shadow: 0px 0px 15px 3px white;
+    /* visibility: hidden; */
 }
-.card-back7{
+#card-back7{
     grid-area: 2/3/2/3;
     box-shadow: 0px 0px 15px 3px white;
+    /* visibility: hidden; */
 }
-.card-back8{
+#card-back8{
     grid-area: 2/4/2/4;
     box-shadow: 0px 0px 15px 3px white;
+    /* visibility: hidden; */
 }
-.card-back9{
+#card-back9{
     grid-area: 3/1/3/1;
     box-shadow: 0px 0px 15px 3px white;
 }
-.card-back10{
+#card-back10{
     grid-area: 3/2/3/2;
     box-shadow: 0px 0px 15px 3px white;
 }
-.card-back11{
+#card-back11{
     grid-area: 3/3/3/3;
     box-shadow: 0px 0px 15px 3px white;
 }
-.card-back12{
+#card-back12{
     grid-area: 3/4/3/4;
     box-shadow: 0px 0px 15px 3px white;
 }
-.card-back13{
+#card-back13{
     grid-area: 4/1/4/1;
     box-shadow: 0px 0px 15px 3px white;
 }
-.card-back14{
+#card-back14{
     grid-area: 4/2/4/2;
     box-shadow: 0px 0px 15px 3px white;
 }
-.card-back15{
+#card-back15{
     grid-area: 4/3/4/3;
     box-shadow: 0px 0px 15px 3px white;
 }
-.card-back16{
+#card-back16{
     grid-area: 4/4/4/4;
     box-shadow: 0px 0px 15px 3px white;
 }
-
+#hardcard1{
+    grid-area: 1/1/1/1;
+}
+#hardcard2{
+    grid-area: 1/2/1/2;
+}
+#hardcard3{
+    grid-area: 1/3/1/3;
+}
+#hardcard4{
+    grid-area: 1/4/1/4;
+}
+#hardcard5{
+    grid-area: 2/1/2/1;
+}
+#hardcard6{
+    grid-area: 2/2/2/2;
+}
+#hardcard7{
+    grid-area: 2/3/2/3;
+}
+#hardcard8{
+    grid-area: 2/4/2/4;
+}
+#hardcard9{
+    grid-area: 3/1/3/1;
+}
+#hardcard10{
+    grid-area: 3/2/3/2;
+}
+#hardcard11{
+    grid-area: 3/3/3/3;
+}
+#hardcard12{
+    grid-area: 3/4/3/4;
+}
+#hardcard13{
+    grid-area: 4/1/4/1;
+}
+#hardcard14{
+    grid-area: 4/2/4/2;
+}
+#hardcard15{
+    grid-area: 4/3/4/3;
+}
+#hardcard16{
+    grid-area: 4/4/4/4;   
+}

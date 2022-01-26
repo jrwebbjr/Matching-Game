@@ -1,27 +1,94 @@
 
-let moveCount = document.getElementById("move-counter");
+//---- Move Counter ----//
 
-moveCounter = () => {
-    moves++;
-    moveCount.innerHTML = moves;
-}
-const timer;
-let timeLeft = 10; //gives player 10 seconds to choose second card
-moveTimer = () => {
+// let moveCount = document.querySelector("#move-counter");
 
-}
+// moveCounter = () => {
+//     moves++;
+//     moveCount.innerHTML = moves;
+// }
 
-let matchedCards
+
+//---- Move Timer ----//
+
+// let timer;
+// let timeLeft = 10; //gives player 10 seconds to choose second card
+// moveTimer = () => {
+//     start() {
+//         timer = setInterval( 1000);
+//     }
+
+// }
+
+
+//---- Game Clock ----//
+
+// let gameClock = document.querySelector("#game-clock");
+
+// let start = Date.now();
+// setInterval(function (){
+//     let delta = Date.now() - start;
+//     output(Math.floor(delta / 1000));
+//     output(new Date().toUTCString());
+// }, 1000);
+
+
+//---- Game Play Functions ----//
+
+//---- Function to Check for Match ----//
+
+let matchedCards = [];
+
 matchCheck = () => {
-    if(cards[0] === cards[1]){
-        matchedCards.push()
+    if(card1.value === Card2.value){
+        matchedCards.push(cards[0,1])
+        
+    } else {
+
     }
 }
 
 
+//---- Shuffling Cards ----//
 
-let cards = document.querySelectorAll("card-container");
-console.dir(cards)
+let cards = document.querySelectorAll("#card-container");
+
+shuffle = () => {
+    for(let i = array.length - 1; i > 0; i--){
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+    
+
+//---- Button Event Listeners ----//
+
+const newGameBtn = document.querySelector("#new-gameBtn");
+const easyCards = document.querySelectorAll(".front");
+const hardCards = document.querySelectorAll(".hard-cards");
+
+
+const hide = (elem) => {
+    elem.style.display = "none";
+}
+
+newGameBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.reload();
+    shuffle(cards);
+    hardCards.style.visibility = "hidden";
+})
+
+const hardBtn = document.querySelector("#hard-modeBtn");
+    hardBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        // window.location.reload();
+        console.log("Button Working");
+        easyCards.classList.add("hidden");
+    })
+
+
+
 
 /*Game Play - 
 on start screen randomize card*/
