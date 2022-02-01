@@ -23,16 +23,18 @@ header{
     justify-content: space-around;
     padding: 10px;
     /* border: 5px solid white; */
-    
 }
 #move-counter{
     color: chartreuse;
 }
-#game-clock{
-    color: chartreuse;
-}
 #match-counter{
     color: chartreuse; 
+}
+#computer-match{
+    color: red;
+}
+#computer-move{
+    color: red;
 }
 .button-bar{
     display: flex;
@@ -78,86 +80,84 @@ header{
     box-shadow: 0px 0px 25px 5px red;
 }
 .card-back{
-    box-shadow: 10px 10px 15px 5px rgb(69, 69, 69);
+    box-shadow: 10px 10px 20px 7px rgb(69, 69, 69);
 }
 
 .grid1{
     grid-area: 1/1/1/1;
-    border: solid 1px white;
     cursor: pointer;
 }
 .grid2{
     grid-area: 1/2/1/2;
-    border: solid 1px white;
     cursor: pointer;
 }
 .grid3{
     grid-area: 1/3/1/3;
-    border: solid 1px white;
     cursor: pointer;
 }
 .grid4{
     grid-area: 1/4/1/4;
-    border: solid 1px white;
     cursor: pointer;
 }
 .grid5{
     grid-area: 2/1/2/1;
-    border: solid 1px white;
     cursor: pointer;
 }
 .grid6{
     grid-area: 2/2/2/2;
-    border: solid 1px white;
     cursor: pointer;
 }
 .grid7{
     grid-area: 2/3/2/3;
-    border: solid 1px white;
     cursor: pointer;
 }
 .grid8{
     grid-area: 2/4/2/4;
-    border: solid 1px white;
     cursor: pointer;
 }
 .grid9{
     grid-area: 3/1/3/1;
-    border: solid 1px white;
     cursor: pointer;
 }
 .grid10{
     grid-area: 3/2/3/2;
-    border: solid 1px white;
     cursor: pointer;
 }
 .grid11{
     grid-area: 3/3/3/3;
-    border: solid 1px white;
     cursor: pointer;
 }
 .grid12{
     grid-area: 3/4/3/4;
-    border: solid 1px white;
     cursor: pointer;
 }
 .grid13{
     grid-area: 4/1/4/1;
-    border: solid 1px white;
     cursor: pointer;
 }
 .grid14{
     grid-area: 4/2/4/2;
-    border: solid 1px white;
     cursor: pointer;
 }
 .grid15{
     grid-area: 4/3/4/3;
-    border: solid 1px white;
     cursor: pointer;
 }
 .grid16{
     grid-area: 4/4/4/4;
-    border: solid 1px white;
     cursor: pointer;
+}
+#modal{
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #0f0f0f;
+    padding: 8px;
+    border-radius: 50%;
+}
+  
+.show{
+    display: flex!important;
 }
